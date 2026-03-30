@@ -12,10 +12,10 @@
     "CodeConfiguration": {
       "ConfigurationSource": "API",
       "CodeConfigurationValues": {
-        "Runtime": "PYTHON_311",
+        "Runtime": "PYTHON_3",
         "BuildCommand": "pip install -r requirements.txt",
-        "StartCommand": "gunicorn app:app --bind 0.0.0.0:5000",
-        "Port": "5000"
+        "StartCommand": "python app.py",
+        "Port": "8080"
       }
     }
   }
