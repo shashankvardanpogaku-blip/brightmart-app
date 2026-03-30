@@ -1,0 +1,22 @@
+{
+  "AuthenticationConfiguration": {
+    "ConnectionArn": "arn:aws:apprunner:us-east-1:382748269708:connection/Shashank/cc7def5aa9e44effa1c76eed9e2ec0fb"
+  },
+  "AutoDeploymentsEnabled": true,
+  "CodeRepository": {
+    "RepositoryUrl": "https://github.com/shashankvardanpogaku/brightmart-app",
+    "SourceCodeVersion": {
+      "Type": "BRANCH",
+      "Value": "main"
+    },
+    "CodeConfiguration": {
+      "ConfigurationSource": "API",
+      "CodeConfigurationValues": {
+        "Runtime": "PYTHON_311",
+        "BuildCommand": "pip install -r requirements.txt",
+        "StartCommand": "gunicorn app:app --bind 0.0.0.0:5000",
+        "Port": "5000"
+      }
+    }
+  }
+}
