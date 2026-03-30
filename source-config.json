@@ -12,7 +12,7 @@
     "CodeConfiguration": {
       "ConfigurationSource": "API",
       "CodeConfigurationValues": {
-        "Runtime": "PYTHON_3",
+        "Runtime": "PYTHON_311",
         "BuildCommand": "pip install -r requirements.txt",
         "StartCommand": "python app.py",
         "Port": "8080"
